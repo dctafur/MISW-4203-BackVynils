@@ -47,6 +47,7 @@ import { AlbumMusicianModule } from './albummusician/albummusician.module';
       keepConnectionAlive: true,
       migrations: [__dirname + '/migration/**/*{.ts,.js}'],
       migrationsRun: true,
+      options: { trustServerCertificate: true },
       extra: {
         ssl: true
       },
