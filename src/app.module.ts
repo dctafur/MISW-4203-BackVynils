@@ -49,7 +49,8 @@ import { AlbumMusicianModule } from './albummusician/albummusician.module';
       migrationsRun: true,
       options: { trustServerCertificate: true },
       extra: {
-        ssl: true
+        ssl: true,
+        trustServerCertificate: true,
       },
     }),
     RecordLabelModule,
